@@ -14,18 +14,39 @@
   <link rel="stylesheet" href="/dist/css/main.min.css">
 </head>
 
-<body>
+<body data-theme="theme-1">
 
 
+  <main class="calc">
+    <header class="calc-header">
+      <h1 class="calc-header__heading">calc</h1>
+
+      <div class="theme">
+
+        <!-- dodac label na range? -->
+        <div class="theme-box">
+          <p class="theme-box__theme-number">1</p>
+          <p class="theme-box__theme-number">2</p>
+          <p class="theme-box__theme-number">3</p>
+        </div>
+
+        <div class="theme-box">
+          <label for="theme" class="theme-box__label">theme
+            <input type="range" id="theme" min="1" value="1" max="3" class="theme-box__range">
+          </label>
+        </div>
+
+      </div>
+    </header>
+  </main>
 
 
-
-  <footer class="attribution">
+  <!-- <footer class="attribution">
     <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
         Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/profile/kimi1723" target=" _blank" rel="noopener">Patryk
         Sąsiadek</a>.</p>
-  </footer>
+  </footer> -->
 
   <script src="/dist/js/main.min.js"></script>
 </body>

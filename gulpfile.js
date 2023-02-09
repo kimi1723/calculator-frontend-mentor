@@ -80,6 +80,7 @@ const startBrowserSync = done => {
 			baseDir: './',
 		},
 		browser: 'firefox',
+		notify: false,
 	});
 
 	done();
