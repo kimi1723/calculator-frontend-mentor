@@ -1,0 +1,36 @@
+@use './themes/colors-theme-1' as c1;
+@use './themes/colors-theme-2' as c2;
+@use './themes/colors-theme-3' as c3;
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'League Spartan', sans-serif;
+	font-size: 3.2rem;
+	background-color: c1.$main-bg;
+}
+
+// FOOTER - ATTRIBUTION
+.attribution {
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+
+	&:hover {
+		color: hsl(200, 85%, 40%);
+	}
+}
+
+// ### Body Copy
+
+// - Font size (numbers): 32px
+
+// ### Font
+
+// - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+// - Weights: 700
