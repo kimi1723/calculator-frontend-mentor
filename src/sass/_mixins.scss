@@ -1,4 +1,4 @@
-@mixin spread-map($map: ()) {
+@mixin theme($map: ()) {
 	@each $key, $value in $map {
 		#{$key}: $value;
 	}
