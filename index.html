@@ -18,26 +18,28 @@
 
 
   <main class="calc">
-    <header class="calc-header">
-      <h1 class="calc-header__heading">calc</h1>
+    <div class="wrapper">
+      <header class="calc-header">
+        <h1 class="calc-header__heading">calc</h1>
 
-      <div class="theme">
+        <div class="theme">
 
-        <!-- dodac label na range? -->
-        <div class="theme-box">
-          <p class="theme-box__theme-number">1</p>
-          <p class="theme-box__theme-number">2</p>
-          <p class="theme-box__theme-number">3</p>
+          <!-- dodac label na range? -->
+          <div class="theme-box">
+            <p class="theme-box__theme-number">1</p>
+            <p class="theme-box__theme-number">2</p>
+            <p class="theme-box__theme-number">3</p>
+          </div>
+
+          <div class="theme-box">
+            <label for="theme" class="theme-box__label">theme
+              <input type="range" id="theme" min="1" value="1" max="3" class="theme-box__range">
+            </label>
+          </div>
+
         </div>
-
-        <div class="theme-box">
-          <label for="theme" class="theme-box__label">theme
-            <input type="range" id="theme" min="1" value="1" max="3" class="theme-box__range">
-          </label>
-        </div>
-
-      </div>
-    </header>
+      </header>
+    </div>
   </main>
 
 

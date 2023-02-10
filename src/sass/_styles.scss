@@ -21,87 +21,87 @@ body {
 	background-color: var(--main-bg);
 }
 
-// body {
-// 	font-family: 'League Spartan', sans-serif;
-// 	font-size: 3.2rem;
-// 	background-color: c1.$main-bg;
-// }
+body {
+	font-family: 'League Spartan', sans-serif;
+	font-size: 3.2rem;
+	background-color: var(--main-bg);
+}
 
-// // CALC HEADER
-// .calc-header {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	color: c1.$white;
-// 	padding: 1em;
+// CALC HEADER
+.calc-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	color: var(--white);
 
-// 	&__heading {
-// 		font-size: 4rem;
-// 		width: 50%;
-// 	}
-// }
+	&__heading {
+		width: 40%;
+		font-size: 4rem;
+	}
+}
 
-// .theme {
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: space-between;
-// 	width: 50%;
-// }
+.theme {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 60%;
+}
 
-// .theme-box {
-// 	&:first-of-type {
-// 		display: flex;
-// 		justify-content: space-around;
-// 		align-self: flex-end;
-// 		width: 6rem;
-// 	}
+.theme-box {
+	align-self: flex-end;
+	&:first-of-type {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 0.2em;
+		width: 7rem;
+	}
 
-// 	&__theme-number {
-// 		font-size: 1.5rem;
-// 	}
+	&:last-of-type {
+		width: 100%;
+		max-width: 145px;
+	}
 
-// 	&__label {
-// 		display: flex;
-// 		justify-content: space-between;
-// 		align-items: center;
-// 		font-size: 1.5rem;
-// 		text-transform: uppercase;
-// 	}
+	&__theme-number {
+		font-size: 1.5rem;
+	}
 
-// 	&__range {
-// 		appearance: none;
-// 		background-color: c1.$toggle-and-keypad-bg;
-// 		padding: 5px;
-// 		border-radius: 25px;
-// 		height: calc(6rem / 3);
-// 		width: 6rem;
-// 		cursor: pointer;
+	&__label {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
 
-// 		&::-moz-range-thumb {
-// 			background-color: c1.$key-bg-toggle;
-// 			border: none;
-// 		}
-// 	}
-// }
+	&__range {
+		appearance: none;
+		padding: 5px;
+		height: calc(8rem / 3);
+		width: 7rem;
+		background-color: var(--toggle-and-keypad-bg);
+		border-radius: 25px;
+		cursor: pointer;
 
-// // FOOTER - ATTRIBUTION
-// .attribution {
-// 	font-size: 1.1rem;
-// 	text-align: center;
-// }
+		&::-moz-range-thumb {
+			height: calc(5rem / 3);
+			width: calc(5rem / 3);
+			border-radius: 50%;
+			background-color: var(--key-bg-toggle);
+			border: none;
+		}
+	}
+}
 
-// .attribution a {
-// 	color: hsl(228, 45%, 44%);
+// FOOTER - ATTRIBUTION
+.attribution {
+	font-size: 1.1rem;
+	text-align: center;
+}
 
-// 	&:hover {
-// 		color: hsl(200, 85%, 40%);
-// 	}
-// }
+.attribution a {
+	color: hsl(228, 45%, 44%);
 
-// ### Body Copy
-
-// - Font size (numbers): 32px
-
-// ### Font
-
-// - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
-// - Weights: 700
+	&:hover {
+		color: hsl(200, 85%, 40%);
+	}
+}
