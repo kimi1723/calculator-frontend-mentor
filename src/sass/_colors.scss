@@ -14,7 +14,9 @@ $theme1: (
 	$key-bg-2: hsl(30, 25%, 89%),
 	$key-shadow-2: hsl(28, 16%, 65%),
 	// TEXT
-	$primary-text: hsl(221, 14%, 31%),
+	$primary-text: hsl(0, 0%, 100%),
+	$key-text: hsl(221, 14%, 31%),
+	$key-sum-text: hsl(0, 0%, 100%),
 	$white: hsl(0, 0%, 100%)
 );
 
@@ -33,6 +35,8 @@ $theme2: (
 	$key-shadow-2: hsl(35, 11%, 61%),
 	//  TEXT
 	$primary-text: hsl(60, 10%, 19%),
+	$key-text: hsl(60, 10%, 19%),
+	$key-sum-text: hsl(0, 0%, 100%),
 	$white: hsl(0, 0%, 100%)
 );
 
@@ -50,6 +54,7 @@ $theme3: (
 	$key-shadow-2: hsl(290, 70%, 36%),
 	// TEXT
 	$primary-text: hsl(52, 100%, 62%),
-	$secondary-text: hsl(198, 20%, 13%),
+	$key-text: hsl(52, 100%, 62%),
+	$key-sum-text: hsl(198, 20%, 13%),
 	$white: hsl(0, 0%, 100%)
 );
