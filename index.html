@@ -14,33 +14,64 @@
   <link rel="stylesheet" href="/dist/css/main.min.css">
 </head>
 
-<body data-theme="theme-1">
+<body data-theme="">
 
 
-  <main class="calc">
-    <div class="wrapper">
-      <header class="calc-header">
-        <h1 class="calc-header__heading">calc</h1>
 
-        <div class="theme">
+  <div class="wrapper calc">
+    <!-- CALC HEADER -->
+    <header class="calc-header">
+      <h1 class="calc-header__heading">calc</h1>
 
-          <!-- dodac label na range? -->
-          <div class="theme-box">
-            <p class="theme-box__theme-number">1</p>
-            <p class="theme-box__theme-number">2</p>
-            <p class="theme-box__theme-number">3</p>
-          </div>
+      <div class="theme">
 
-          <div class="theme-box">
-            <label for="theme" class="theme-box__label">theme
-              <input type="range" id="theme" min="1" value="1" max="3" class="theme-box__range">
-            </label>
-          </div>
 
+        <div class="theme-box">
+          <p class="theme-box__theme-number">1</p>
+          <p class="theme-box__theme-number">2</p>
+          <p class="theme-box__theme-number">3</p>
         </div>
-      </header>
-    </div>
-  </main>
+
+        <div class="theme-box">
+          <label for="theme" class="theme-box__label">theme
+            <input type="range" id="theme" min="1" value="1" max="3" class="theme-box__range">
+          </label>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- CALC RESULT -->
+    <section class="calc-result">
+      <p class="calc-result__text">399,981</p>
+    </section>
+
+    <main>
+      <form class="calc-keys">
+        <button class="calc-keys__key">7</button>
+        <button class="calc-keys__key">8</button>
+        <button class="calc-keys__key">9</button>
+        <button class="calc-keys__key">del</button>
+        <button class="calc-keys__key">4</button>
+        <button class="calc-keys__key">5</button>
+        <button class="calc-keys__key">6</button>
+        <button class="calc-keys__key">+</button>
+        <button class="calc-keys__key">1</button>
+        <button class="calc-keys__key">2</button>
+        <button class="calc-keys__key">3</button>
+        <button class="calc-keys__key">-</button>
+        <button class="calc-keys__key">.</button>
+        <button class="calc-keys__key">0</button>
+        <button class="calc-keys__key">/</button>
+        <button class="calc-keys__key">x</button>
+
+        <button type="reset" class="calc-keys__key calc-keys__key--functional">reset</button>
+        <button type="submit" class="calc-keys__key calc-keys__key--functional">=</button>
+      </form>
+    </main>
+
+  </div>
+
 
 
   <!-- <footer class="attribution">
@@ -50,7 +81,7 @@
         Sąsiadek</a>.</p>
   </footer> -->
 
-  <script src="/dist/js/main.min.js"></script>
+  <script src="/dist/js/main.min.js" async></script>
 </body>
 
 </html>

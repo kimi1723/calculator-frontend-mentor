@@ -5,4 +5,5 @@ const handleTheme = () => {
 	theme.dataset.theme = `theme-${themeRange.value}`;
 };
 
+handleTheme();
 themeRange.addEventListener('click', handleTheme);

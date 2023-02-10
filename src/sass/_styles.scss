@@ -18,20 +18,18 @@ html {
 }
 
 body {
-	background-color: var(--main-bg);
-}
-
-body {
 	font-family: 'League Spartan', sans-serif;
 	font-size: 3.2rem;
 	background-color: var(--main-bg);
+}
+.calc {
+	padding: 0.7em;
 }
 
 // CALC HEADER
 .calc-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 1em;
 	color: var(--white);
 
 	&__heading {
@@ -49,10 +47,12 @@ body {
 
 .theme-box {
 	align-self: flex-end;
+
 	&:first-of-type {
 		display: flex;
 		justify-content: space-around;
 		margin-bottom: 0.2em;
+		padding-left: 5px;
 		width: 7rem;
 	}
 
@@ -74,6 +74,7 @@ body {
 	}
 
 	&__range {
+		align-items: center;
 		appearance: none;
 		padding: 5px;
 		height: calc(8rem / 3);
@@ -82,6 +83,7 @@ body {
 		border-radius: 25px;
 		cursor: pointer;
 
+		&::-webkit-slider-thumb,
 		&::-moz-range-thumb {
 			height: calc(5rem / 3);
 			width: calc(5rem / 3);
@@ -92,6 +94,52 @@ body {
 	}
 }
 
+// CALC RESULT
+.calc-result {
+	margin: 0.8em 0 0.7em;
+	padding: 0.5em 0.5em;
+	width: 100%;
+	text-align: right;
+	background-color: var(--screen-bg);
+	border-radius: 10px;
+
+	&__text {
+		color: var(--white);
+	}
+}
+
+// CALC KEYS
+.calc-keys {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 0.4em;
+	background-color: var(--toggle-and-keypad-bg);
+	border-radius: 10px;
+
+	&__key {
+		width: calc((100% - 0.6em * 4) / 4);
+		margin: 0.5em 0.3em;
+		padding: 0.8em 0.3em;
+		font-size: 2.3rem;
+		font-weight: bold;
+		color: var(--primary-text);
+		background-color: var(--key-bg-2);
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 5px 0 0 var(--key-shadow-2);
+		cursor: pointer;
+
+		&:nth-of-type(4),
+		&:nth-of-type(-2) {
+			text-transform: uppercase;
+		}
+
+		&--functional {
+			width: calc(100% / 2 - 0.6em);
+		}
+	}
+}
 // FOOTER - ATTRIBUTION
 .attribution {
 	font-size: 1.1rem;
