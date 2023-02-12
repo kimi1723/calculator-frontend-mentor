@@ -90,11 +90,6 @@ body {
 		border-radius: 25px;
 		cursor: pointer;
 
-		:hover {
-			background-color: blue;
-		}
-
-		&::-webkit-slider-thumb,
 		&::-moz-range-thumb {
 			appearance: none;
 			height: calc(5rem / 3);
@@ -105,7 +100,23 @@ body {
 			box-shadow: 0 0 2px 1px var(--key-bg-toggle-shadow);
 
 			&:hover {
-				background-color: var(--primary-text);
+				background-color: var(--key-bg-toggle-hover);
+				box-shadow: 0 0 2px 1px var(--key-bg-toggle-shadow-hover);
+			}
+		}
+
+		&::-webkit-slider-thumb {
+			appearance: none;
+			height: calc(5rem / 3);
+			width: calc(5rem / 3);
+			border-radius: 50%;
+			border: none;
+			background-color: var(--key-bg-toggle);
+			box-shadow: 0 0 2px 1px var(--key-bg-toggle-shadow);
+
+			&:hover {
+				background-color: var(--key-bg-toggle-hover);
+				box-shadow: 0 0 2px 1px var(--key-bg-toggle-shadow-hover);
 			}
 		}
 	}
@@ -136,7 +147,6 @@ body {
 
 	&__key {
 		width: calc((100% - 0.6em * 4) / 4);
-
 		margin: 0.5em 0.3em;
 		padding: 0.6em 0.3em;
 		font-size: 1.7rem;
@@ -148,18 +158,33 @@ body {
 		box-shadow: 0 4px 0 0 var(--key-shadow-2);
 		cursor: pointer;
 
+		&:hover {
+			background-color: var(--key-bg-2-hover);
+			box-shadow: 0 4px 0 0 var(--key-shadow-2-hover);
+		}
+
 		&:nth-of-type(4),
 		&:nth-last-of-type(2) {
 			color: var(--white);
 			background-color: var(--key-bg);
 			box-shadow: 0 4px 0 0 var(--key-shadow);
 			text-transform: uppercase;
+
+			&:hover {
+				background-color: var(--key-bg-hover);
+				box-shadow: 0 4px 0 0 var(--key-shadow-hover);
+			}
 		}
 
 		&:nth-last-of-type(1) {
 			color: var(--key-sum-text);
 			background-color: var(--key-bg-toggle);
 			box-shadow: 0 4px 0 0 var(--key-bg-toggle-shadow);
+
+			&:hover {
+				background-color: var(--key-bg-toggle-hover);
+				box-shadow: 0 4px 0 0 var(--key-bg-toggle-shadow-hover);
+			}
 		}
 
 		&--functional {
