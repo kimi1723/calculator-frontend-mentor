@@ -1,5 +1,6 @@
 const themeRange = document.querySelector('.theme-box__range');
 const theme = document.querySelector('body');
+const themeListeners = ['click', 'keydown', 'touchend'];
 
 const handleTheme = e => {
 	setTimeout(() => {
@@ -8,5 +9,6 @@ const handleTheme = e => {
 };
 
 handleTheme();
-themeRange.addEventListener('click', handleTheme);
-themeRange.addEventListener('keydown', handleTheme);
+themeListeners.forEach(listener => {
+	themeRange.addEventListener(listener, handleTheme);
+});
