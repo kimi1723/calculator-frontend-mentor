@@ -81,7 +81,6 @@ body {
 	}
 
 	&__range {
-		align-items: center;
 		appearance: none;
 		padding: 5px;
 		height: calc(8rem / 3);
@@ -90,14 +89,23 @@ body {
 		border-radius: 25px;
 		cursor: pointer;
 
+		:hover {
+			background-color: blue;
+		}
+
 		&::-webkit-slider-thumb,
 		&::-moz-range-thumb {
+			appearance: none;
 			height: calc(5rem / 3);
 			width: calc(5rem / 3);
 			border-radius: 50%;
+			border: none;
 			background-color: var(--key-bg-toggle);
 			box-shadow: 0 0 2px 1px var(--key-bg-toggle-shadow);
-			border: none;
+
+			&:hover {
+				background-color: var(--primary-text);
+			}
 		}
 	}
 }
