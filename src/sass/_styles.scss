@@ -19,8 +19,9 @@ html {
 
 body {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	min-height: 100vh;
 	padding: 0.7em;
 	font-family: 'League Spartan', sans-serif;
@@ -194,12 +195,14 @@ body {
 }
 // FOOTER - ATTRIBUTION
 .attribution {
-	font-size: 1.1rem;
+	padding-top: 4em;
 	text-align: center;
+	font-size: 1.1rem;
+	color: var(--primary-text);
 }
 
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: hsl(228, 76%, 67%);
 
 	&:hover {
 		color: hsl(200, 85%, 40%);
