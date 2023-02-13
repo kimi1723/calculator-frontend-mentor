@@ -35,7 +35,7 @@ const handleCalc = e => {
 			e.target.textContent !== '.'
 		) {
 			result.textContent += valueString;
-		} else if (e.target.textContent === '.' && true != result.textContent.includes('.')) {
+		} else if (e.target.textContent === '.' && result.textContent.at(-1) !== '.') {
 			result.textContent += valueString;
 		} else {
 			if (
