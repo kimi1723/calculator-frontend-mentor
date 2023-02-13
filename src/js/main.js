@@ -3,14 +3,25 @@ const theme = document.querySelector('body');
 const themeListeners = ['click', 'keydown', 'touchend'];
 const keys = document.querySelectorAll('.calc-keys__key');
 const result = document.querySelector('.calc-result__text');
-let value = '';
-let resultV = '';
 
 const handleTheme = () => {
 	setTimeout(() => {
 		theme.dataset.theme = `theme-${themeRange.value}`;
 	}, 1);
 };
+
+if (window.matchMedia) {
+	if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		theme.dataset.theme = `theme-1`;
+		themeRange.value = 1;
+	} else {
+		theme.dataset.theme = `theme-2`;
+		themeRange.value = 2;
+	}
+} else {
+	theme.dataset.theme = `theme-1`;
+	themeRange.value = 1;
+}
 
 const handleCalc = e => {
 	e.preventDefault();
@@ -69,7 +80,6 @@ const handleCalc = e => {
 };
 
 result.textContent = 0;
-handleTheme();
 
 themeListeners.forEach(listener => {
 	themeRange.addEventListener(listener, handleTheme);
